@@ -1,0 +1,35 @@
+Steps for creating an app in Node.js using express generator. Use Knex to create a migration and to seed tables within a database.
+
+Tech:
+Node.js
+Postgres
+Express
+Knex
+
+Steps:
+Within command line -
+
+--> npm install express-generator -g
+^ create express-generator application skeleton
+
+--> express --view=ejs myapp
+^ set view engine and create a subdirectory called myapp
+
+--> npm i or npm install
+^ install any dependencies into package.json
+
+--> npm start
+^ run server, then point a new browser window to localhost:3000 to see if server is running properly.
+
+--> npm install --s knex pg
+^ installs kne and postgres into package.json and save it locally to current directory with lowercase --s
+
+--> Within current directory go into package.json and under scripts add "knex":"knex" to run the knex scripts
+
+--> createdb [name]
+^ create a db in sql
+
+--> psql -l
+^ lists all db within sql, check to see if created db exists with listed directory
+
+-->
